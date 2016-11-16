@@ -200,6 +200,7 @@ enum razer_mouse_res {
   * @RAZER_MOUSETYPE_IMPERATOR: An "Imperator" mouse
   * @RAZER_MOUSETYPE_TAIPAN: A "Taipan" mouse
   * @RAZER_MOUSETYPE_MAMBA_TE: A "Mamba Tournament Edition" mouse
+  * @RAZER_MOUSETYPE_DIAMONDBACK: A "Diamondback Collector's Edition" mouse
   */
 
 enum razer_mouse_type {
@@ -212,6 +213,7 @@ enum razer_mouse_type {
 	RAZER_MOUSETYPE_IMPERATOR,
 	RAZER_MOUSETYPE_TAIPAN,
 	RAZER_MOUSETYPE_MAMBA_TE,
+	RAZER_MOUSETYPE_DIAMONDBACK,
 };
 
 /** struct razer_button_function - A logical button function

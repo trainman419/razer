@@ -29,6 +29,7 @@
 #include "hw_copperhead.h"
 #include "hw_boomslangce.h"
 #include "hw_imperator.h"
+#include "hw_diamondback.h"
 #include "hw_taipan.h"
 #include "hw_mamba_tournament_edition.h"
 
@@ -128,6 +129,12 @@ static const struct razer_mouse_base_ops razer_imperator_base_ops = {
 	.release		= razer_imperator_release,
 };
 
+static const struct razer_mouse_base_ops razer_diamondback_base_ops = {
+	.type			= RAZER_MOUSETYPE_DIAMONDBACK,
+	.init			= razer_diamondback_init,
+	.release		= razer_diamondback_release,
+};
+
 static const struct razer_mouse_base_ops razer_taipan_base_ops = {
 	.type			= RAZER_MOUSETYPE_TAIPAN,
 	.init			= razer_taipan_init,
@@ -168,6 +175,7 @@ static const struct razer_usb_device razer_usbdev_table[] = {
 	USB_MOUSE(0x1532, 0x0101, &razer_copperhead_base_ops),
 	USB_MOUSE(0x1532, 0x0005, &razer_boomslangce_base_ops),
 	USB_MOUSE(0x1532, 0x0017, &razer_imperator_base_ops),
+	USB_MOUSE(0x1532, 0x004C, &razer_diamondback_base_ops),
 	USB_MOUSE(0x1532, 0x0034, &razer_taipan_base_ops),
 	USB_MOUSE(0x1532, 0x0046, &razer_mamba_te_base_ops), /*mamba tournament edition*/
 	{ 0, }, /* List end */

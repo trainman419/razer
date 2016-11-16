@@ -18,6 +18,7 @@ add_library(razer SHARED
 	    hw_lachesis5k6.c
 	    hw_naga.c
 	    hw_imperator.c
+	    hw_diamondback.c
 	    hw_taipan.c
 	    hw_mamba_tournament_edition.c)
 
